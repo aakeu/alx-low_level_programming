@@ -1,7 +1,7 @@
 #include <studio.h>
 /**
- * main - Entry point takes parameter
- * Return: 0 Indicates success
+* main - Entry point takes parameter
+* Return: 0 Indicates success
 */
 int main(void)
 {
