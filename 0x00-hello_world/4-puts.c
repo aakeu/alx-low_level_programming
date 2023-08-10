@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
 * main - Entry point takes parameter
 * Return: 0 Indicates success
