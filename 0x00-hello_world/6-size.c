@@ -6,8 +6,8 @@
 int main(void)
 {
 	int i;
-	char;
-	float; 
+	char c;
+	float f; 
 
 	printf("size of a char: %lu bytes(s)\n", sizeof(c));
 	printf("size of an int: %lu bytes(s)\n", sizeof(i));
