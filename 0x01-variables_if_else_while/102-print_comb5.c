@@ -12,10 +12,13 @@
 int main(void)
 {
 	int first_digit, second_digit;
+	putchar ('0');
+	putchar ('0');
+	putchar (' ');
 
-	for (first_digit = 0; first_digit <= 99; first_digit++)
+	for (first_digit = 0; first_digit <= 98; first_digit++)
 	{
-		for (second_digit = 0; second_digit <= 99; second_digit++)
+		for (second_digit = 1; second_digit <= 99; second_digit++)
 		{
 			if (first_digit <= second_digit)
 			{
