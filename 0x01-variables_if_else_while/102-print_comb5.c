@@ -11,32 +11,29 @@
  */
 int main(void)
 {
-	int first_digit, second_digit;
-	putchar ('0');
-	putchar ('0');
-	putchar (' ');
+	int num1, num2;
 
-	for (first_digit = 0; first_digit <= 98; first_digit++)
+	for (num1 = 0; num1 <= 99; num1++)
 	{
-		for (second_digit = 1; second_digit <= 99; second_digit++)
+		for (num2 = 1; num2 <= 99; num2++)
 		{
-			if (first_digit <= second_digit)
+			if (num1 <= num2)
 			{
-				putchar(first_digit / 10 + '0');
-				putchar(first_digit % 10 + '0');
+				putchar(num1 / 10 + '0');
+				putchar(num1 % 10 + '0');
 				putchar(' ');
-				putchar(second_digit / 10 + '0');
-				putchar(second_digit % 10 + '0');
+				putchar(num2 / 10 + '0');
+				putchar(num2 % 10 + '0');
 
-				if (first_digit != 98 || second_digit != 99)
+				if (num1 != 99 || num2 != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-		}	}
+			}
+		}
 	}
 
 	putchar('\n');
 	return (0);
 }
-
