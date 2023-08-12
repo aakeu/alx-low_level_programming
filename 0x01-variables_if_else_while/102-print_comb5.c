@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point of thr program
  *
@@ -11,31 +9,33 @@
  */
 int main(void)
 {
-    int num1 = 0, num2;
+	int fist_digit = 0, second_digit;
 
-    while (num1 <= 99)
-    {
-        num2 = num1;
-        while (num2 <= 99)
-        {
-            if (num2 != num1)
-            {
-                putchar((num1 / 10) + 48);
-                putchar((num1 % 10) + 48);
-                putchar(' ');
-                putchar((num2 / 10) + 48);
-                putchar((num2 % 10) + 48);
+	while (first_digit <= 99)
+	{
+		second_digit = first_digit;
+		while (second_digit  <= 99)
+		{
+			if (second_digit != first_digit)
+			{
+				putchar((first_digit / 10) + 48);
+				putchar((first_digit % 10) + 48);
+				putchar(' ');
+				putchar((second_digit / 10) + 48);
+				putchar((second_digit % 10) + 48);
 
-                if (num1 != 98 || num2 != 99)
-                {
-                    putchar(',');
-                    putchar(' ');
-                }
-            }
-            num2++;
-        }
-        num1++;
-    }
-    putchar('\n');
-    return (0);
+				if (first_digit != 98 || second_digit != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			second_digit++;
+		}
+		first_digit++;
+	}
+	putchar ('\n');
+	return (0);
 }
+
+
