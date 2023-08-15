@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islpha - check characters lower case
+* _isalpha - check characters lower case
 * @c: input characters
 * Return: boolean vaule
 */
