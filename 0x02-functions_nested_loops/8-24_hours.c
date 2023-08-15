@@ -4,7 +4,7 @@
  * void
  * Return: no return
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int min;
 	int hour;
@@ -18,6 +18,7 @@ int jack_bauer(void)
 			_putchar(':');
 			_putchar(hour / 10 + '0');
 			_putchar(hour % 10 + '0');
+			_putchar('\n');
 		}
 	}
 }
