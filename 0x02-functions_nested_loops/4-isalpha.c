@@ -1,8 +1,8 @@
 #include "main.h"
 /**
 * _islpha - check characters lower case
-* 
-* Return: boolean vaule 
+* @c: input characters
+* Return: boolean vaule
 */
 int _isalpha(int c)
 {
