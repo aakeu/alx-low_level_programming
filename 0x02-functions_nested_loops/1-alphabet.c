@@ -1,22 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
 /**
- * main - Entry point of the program
+ * print_alphabet - prints the alphabet
  *
- * Return: Always 0 (Success)
+ * Return: no return
  */
-int main(void)
+void print_alphabet(void)
 {
-	char counter = 'a';
+	char counter;
 
-	while (counter <= 'z')
+	for (counter = 'a'; counter <= 'z'; counter++)
 	{
-		putchar(counter);
-		counter++;
+	_putchar(counter);
 	}
 
-	putchar('\n');
-	return (0);
-}
+	_putchar('\n');
+}	
