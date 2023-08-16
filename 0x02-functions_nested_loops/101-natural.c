@@ -13,9 +13,8 @@ int main(void)
 	for (s = 0; s < 2024; s++)
 	{
 		if ((s %  3 == 0 || (s % 5 == 0))
-		{
-			p += s;
-		}
+		p += s;
+
 	}
 	printf("%d\n", p);
 	return (0);
