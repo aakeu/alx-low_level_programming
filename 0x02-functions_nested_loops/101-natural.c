@@ -8,16 +8,15 @@
  */
 int main(void)
 {
-	int p = 1024;
-	int m = 0;
+	int p, s;
 
-	for (int i = 1; i < p; i++)
+	for (s = 0; s < 2024; s++)
 	{
-		if (i %  3 == 0 || i % 5 == 0)
+		if ((s %  3 == 0 || (s % 5 == 0))
 		{
-			m += i;
+			p += s;
 		}
 	}
-	printf("%d\n", m);
+	printf("%d\n", p);
 	return (0);
 }
