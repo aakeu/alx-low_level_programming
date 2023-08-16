@@ -10,7 +10,7 @@ int main(void)
 {
 	int p, s;
 
-	for (s = 0; s < 2024; s++)
+	for (s = 0; s < 1024; s++)
 	{
 		if ((s %  3 == 0) || (s % 5 == 0))
 		p += s;
