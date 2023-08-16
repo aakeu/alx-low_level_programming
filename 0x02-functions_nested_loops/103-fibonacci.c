@@ -17,7 +17,7 @@ int main(void)
 
 		if (s > 4000000)
 			break;
-		
+
 		if ((s % 2) == 0)
 			total_s += s;
 		f = f1;
