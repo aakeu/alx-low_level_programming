@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * prin numbers 1 - 100
+ * main- print numbers 1 - 100 followed by a new line
  * multiples of 3 print Fizz
  * mutiples of 5 print Buzz
- * mutiples of both print fizzbuzz
+ * mutiples of both 3 and 5 print fizzbuzz
  *
  * Return: 0
  */
