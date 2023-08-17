@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isdigit: verify if it is digit between 0 to 9
+ * _isdigit- return 1 when it is a digit between 0 to 9
  *
  * @c: is a figure
  *
