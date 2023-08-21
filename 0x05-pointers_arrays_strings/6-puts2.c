@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * put2- putchar out characters on the other line
+ * puts2- putchar out characters on the other line
  *
  * @str: strings that input the parameter
  *
