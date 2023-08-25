@@ -2,31 +2,30 @@
 #include <stdio.h>
 
 /**
- * isLower - determine if the asscii letter is  lowercase letters
- * is_seperate - determine the Asscii demiliter
- * @c: character
+ * leet - point of entry
+ * One if, Two loops only
+ * @c: input
  *
- * Return: 1 if true.
+ * Return: 0 always.
  */
 
-char *leet(char *str)
+char *leet(char *c)
 {
 	int p;
 	int q;
+	int f[] = {'a', 'A', 'e', 'E', 'o', '0', 't', 'T', 'l', 'L'};
+	int r[] = {'4', '3', '0', '7', '1'};
 
-	char leet_chars[] = "AEOTL";
-	char leet_replacement[] = "43071";
-
-	for (p = 0; str[p] != "\0"; p++)
+	for (p = 0; c[p] != '\0'; p++)
 	{
-		for (q = 0; leet_chars[q] != "\0"; q++)
+		for (q = 0; q <= 9; q++)
 		{
-			if (str[p] == leet_chars[q] || str[p] == leet_chars[q] + 32)
-			{ 
-				str[p] = leet_replacement[q];
-				break;
+			if (c[p] == f[q])
+			{
+				c[p] = r[q / 2];
+				q = 9;
 			}
 		}
 	}
-	return str;
+	return (c);
 }
