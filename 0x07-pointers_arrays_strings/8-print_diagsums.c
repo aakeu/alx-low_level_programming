@@ -16,9 +16,9 @@ void print_diagsums(int *a, int size)
 	int sD = 0;
 
 	for (p = 0; p <= (size * size); p = p + size + 1)
-		mD = mD + a[p]; 
+		mD = mD + a[p];
 
-	for (q = size -1; q <= (size * size) - size; q = q + size - 1)
+	for (q = size - 1; q <= (size * size) - size; q = q + size - 1)
 		sD = sD + a[q];
 
 	printf("%d, %d\n", mD, sD);
