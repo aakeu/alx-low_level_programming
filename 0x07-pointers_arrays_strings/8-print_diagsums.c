@@ -10,16 +10,16 @@
 
 void print_diagsums(int *a, int size)
 {
+	int p;
+	int q;
 	int mD = 0;
 	int sD = 0;
-	int i;
 
-		for (i = 0; i < size; i++)
-		{
-			mD += a[i];
-			sD += a[size - i -1];
-		}
+	for (p = 0; p <= (size * size); p = p + size + 1)
+		mD = mD + a[p]; 
 
-	_putchar ("%d,", mD);
-	_putchar ("%d\n", sD);
+	for (q = size -1; q <= (size * size) - size; q = q + size - 1)
+		sD = sD + a[q];
+
+	printf("%d, %d\n", mD, sD);
 }
