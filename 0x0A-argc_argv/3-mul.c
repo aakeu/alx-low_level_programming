@@ -6,7 +6,7 @@
  * main -Entry Point
  * atoi is a funtion that coverts a string to an int
  * @argc: arguments
- * @argv array that point to arguements
+ * @argv: array that point to arguements
  * Return: 0
  */
 int main(int argc, char *argv[])
