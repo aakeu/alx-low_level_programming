@@ -9,12 +9,12 @@
  */
 
 int main(int argc, char *argv[])
-
+{
 	int i = 0;
 
 	while (i < argc)
 	{
-		_putchar("%sn", argv[i]);
+		printf("%sn", argv[i]);
 		i++;
 	}
 	return (0);

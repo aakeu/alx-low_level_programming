@@ -1,18 +1,17 @@
-#include <studio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Entry Point
- * @agrc: an argument
- * @argv: array point to the arguments
- * Return: 0
+ *main - Entry Point
+ *@argc: an argument
+ *@argv:: array point to the arguments
+ *Return: 0
  */
-
-int main(int agrc, _attribute_((usused)) char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
 	int i;
 
-	for (i = 0; i < argvc; i++)
+	for (i = 0; i < argc; i++)
 	{
 	}
 	printf("%d\n", i - 1);
