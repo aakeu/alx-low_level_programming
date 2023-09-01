@@ -8,24 +8,24 @@
  * @argc: arguments
  * @argv array that point to arguements
  * Return: 0
-*/
+ */
 int main(int argc, char *argv[])
 {
-    int j, res = 1;
+	int j, res = 1;
 
-    if (argc != 3)
-    {
-        printf("%s\n", "Error");
-        return 1;
-    }
-    else
-    {
-        for (j = 1; j < argc; j++)
-        {
-            res *= atoi(argv[j]);
-        }
-        printf("%d\n", res);
-    }
-    return 0;
+	if (argc != 3)
+	{
+		printf("%s\n", "Error");
+		return (1);
+	}
+	else
+	{
+		for (j = 1; j < argc; j++)
+		{
+			res *= atoi(argv[j]);
+		}
+		printf("%d\n", res);
+	}
+	return (0);
 }
 
